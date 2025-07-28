@@ -6,7 +6,7 @@ from collections import defaultdict
 _RELEASE = True
 
 if not _RELEASE:
-    _component_func = components.declare_component("concept_component", url="http://localhost:3001")
+    _component_func = components.declare_component("conceptmap_component", url="http://localhost:3001")
 else:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(parent_dir, "frontend/build")

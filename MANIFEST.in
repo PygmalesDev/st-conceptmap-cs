@@ -1,1 +1,1 @@
-recursive-include contextmap_component/frontend/build *
+recursive-include conceptmap_component/frontend/build *
