@@ -1,0 +1,10 @@
+build/
+dist/
+e2e/
+*.egg-info/
+
+__pychache__/
+app.py
+
+node_modules/
+package-lock.json
