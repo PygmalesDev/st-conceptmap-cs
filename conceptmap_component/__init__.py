@@ -6,21 +6,21 @@ from collections import defaultdict
 _RELEASE = True
 
 if not _RELEASE:
-    _component_func = components.declare_component("contextmap_component", url="http://localhost:3001")
+    _component_func = components.declare_component("concept_component", url="http://localhost:3001")
 else:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(parent_dir, "frontend/build")
-    _component_func = components.declare_component("contextmap_component", path=build_dir)
+    _component_func = components.declare_component("conceptmap_component", path=build_dir)
 
 
-def contextmap_component(cm_data: Dict[str, Any], submit_request:bool=False, key:Any=None):
+def conceptmap_component(cm_data: Dict[str, Any], submit_request:bool=False, key:Any=None):
     
     component_value = _component_func(cm_data=cm_data, submit_request=submit_request, key=key, default=0)
 
     return component_value
 
 
-def parse_contextmap(cm: Dict[str, Any]) -> Dict[str, Any]:
+def parse_conceptmap(cm: Dict[str, Any]) -> Dict[str, Any]:
     parsed_cm = defaultdict(list)
 
     elements = cm["elements"]

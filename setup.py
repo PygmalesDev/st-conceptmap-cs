@@ -6,11 +6,11 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
-    name="st_contextmap_cs",
-    version="0.0.2",
+    name="st_conceptmap_cs",
+    version="0.0.1.1",
     author="Kristian Schwarz",
     author_email="kristian.schwarz@wi-kassel.de",
-    description="Streamlit component based on Cytoscape.js that allows for creation and editing of context maps",
+    description="Streamlit component based on Cytoscape.js that allows for creation and editing of concept maps",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="",
